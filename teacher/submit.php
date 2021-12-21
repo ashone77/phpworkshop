@@ -15,6 +15,7 @@ $query-> bindParam(':sub', $subject, PDO::PARAM_STR);
 $query-> execute();
 if($query->rowCount() > 0){
     echo "Sign up Successful!";
+    echo "<script type='text/javascript'> document.location = 'students.php'; </script>";
 } else {
     echo "Something went wrong, Please try again.";
 }
