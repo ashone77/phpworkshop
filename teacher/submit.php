@@ -4,7 +4,7 @@ session_start();
 include('./config.php');
 if(isset($_POST['submit']))
 {
-$uname=$_POST['username'];
+$uname=$_POST['uname'];
 $password=md5($_POST['password']);
 $subject = $_POST['sub'];
 $sql ="INSERT INTO teachers(tname,password,subject) values (:uname,:pass,:sub)";
